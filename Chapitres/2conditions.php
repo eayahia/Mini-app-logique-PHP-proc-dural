@@ -26,7 +26,7 @@ if ($note >= 16) {
 echo "<br>";
 echo "<br>";
 
-$jour = "Vendredi";
+$jour = "Mercredi";
 switch ($jour) {
     case "Landi":
         echo "Début de semaine";

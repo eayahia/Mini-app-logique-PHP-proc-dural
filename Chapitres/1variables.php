@@ -22,7 +22,6 @@ echo "Connecté : " .($estConnecte ? "Oui" : "Non")  ."<br>";
 var_dump($nom);
 
 
-
 gettype ($nom) ;
 
 
