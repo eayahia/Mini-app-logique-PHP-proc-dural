@@ -19,7 +19,7 @@ function bienvenue($nom = "visiteur") {
     echo "Bienvenue " . $nom;
 }
 bienvenue(); // Affiche "Bienvenue visiteur"
-
+bienvenue("YAHIA");
 
 
 
