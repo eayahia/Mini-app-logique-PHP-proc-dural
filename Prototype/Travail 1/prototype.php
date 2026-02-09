@@ -33,7 +33,9 @@ if (!empty($_POST)) {
     <option >-</option>
     <option >*</option>
     <option >/</option>
-</select><br><br>
+</select>
+<br>
+<br>
 <button>Calculer</button>
 </form>
 <?php
