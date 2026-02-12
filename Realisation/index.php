@@ -19,8 +19,8 @@ if (isset($_POST['envoyer'])) {
 }
 if (isset($_POST['afichir'])) { 
     if (file_exists('posts.txt')) {
-        $comontir = file('posts.txt', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
-        $hamsa = array_slice($comontir, 0, 5);
+        $comantaire = file('posts.txt', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+        $y = array_slice($comantaire, 0, 5);
         echo "<table border=1>
                 <tr>
                     <th>Name</th>
@@ -28,9 +28,9 @@ if (isset($_POST['afichir'])) {
                     <th>Date</th>
                     <th>Message</th>
                 </tr>";
-        foreach($hamsa as $ligne) {
-            $clinligne = trim($ligne,"<> \n\r");
-            $data = explode('|', $clinligne);
+        foreach($y as $ligne) {
+            $cleanligne= trim($ligne,"<> \n\r");
+            $data = explode('|', $cleanligne);
             if (count($data) == 4) {
                 echo "<tr>
                         <td>".htmlspecialchars($data[0])."</td>
