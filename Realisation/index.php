@@ -17,12 +17,12 @@ if (isset($_POST['envoyer'])) {
         $nom = $email = $message = "";
     }
 }
-if (isset($_POST['afichir'])) { 
+if (isset($_POST['affechier'])) { 
     if (file_exists('posts.txt')) {
         $comantaire = file('posts.txt', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
         $y = array_slice($comantaire, 0, 5);
         echo "<table border=1>
-                <tr>
+                <tr> 
                     <th>Name</th>
                     <th>Email</th>
                     <th>Date</th>
@@ -53,5 +53,5 @@ if (isset($_POST['afichir'])) {
     <input type="email" name="email" placeholder="Email" value="<?= htmlspecialchars($email) ?>"><br><br>
     <textarea name="message" placeholder="Votre message"><?= htmlspecialchars($message) ?></textarea><br><br>
     <button type="submit" name="envoyer">Envoyer</button>
-    <button type="submit" name="afichir">Afficher</button>
+    <button type="submit" name="affechier">Afficher</button>
 </form>
